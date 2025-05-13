@@ -1,0 +1,45 @@
+.composition {
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    position: absolute;
+    transition: all 0.3s;
+
+    &--1 {
+      top: 0;
+      left: 0;
+
+      &:hover {
+        transform: scale(1.2);
+        z-index: 1000;
+      }
+    }
+
+    &--2 {
+      top: 5rem;
+      right: 0;
+
+      &:hover {
+        transform: scale(1.2);
+        z-index: 1000;
+      }
+    }
+
+    &--3 {
+      top: 13rem;
+      left: 10rem;
+
+      &:hover {
+        transform: scale(1.2);
+        z-index: 1000;
+      }
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.92);
+  }
+}

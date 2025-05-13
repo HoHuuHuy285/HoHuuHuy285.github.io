@@ -1,0 +1,16 @@
+.section-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+  padding: 10rem 14rem 14rem 14rem;
+  align-content: start;
+  align-items: start;
+  width: 160rem;
+  margin: 0 auto 50rem auto;
+}
+
+.section-texbox {
+  grid-column: 1 / 2;
+  grid-row: 2 /2;
+}
