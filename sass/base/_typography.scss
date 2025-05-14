@@ -32,6 +32,7 @@ body {
 }
 
 .heading-secondary {
+  display: inline-block;
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -41,14 +42,10 @@ body {
     $color-primary
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
-
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  text-align: center;
-  display: inline-block;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

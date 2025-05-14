@@ -1,16 +1,34 @@
 .section-about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 5rem;
-  padding: 10rem 14rem 14rem 14rem;
-  align-content: start;
-  align-items: start;
-  width: 160rem;
-  margin: 0 auto 50rem auto;
+  max-width: 160rem;
+  margin: 0 auto;
 }
 
 .section-texbox {
-  grid-column: 1 / 2;
-  grid-row: 2 /2;
+  width: 100%;
+}
+
+.section-tech {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-dark, 0.5),
+      rgba($color-primary, 0.5)
+    ),
+    url(../img/4.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -1rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.flexbox {
+  max-width: 160rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
 }
